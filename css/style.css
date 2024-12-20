@@ -1,0 +1,288 @@
+/****** General ***********/
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+:root {
+    --main-color: #0065FC;
+    --main-bg-color: #F2F2F2;
+    --filter-bg-color: #DEEBFF;
+}
+
+.fa-solid {
+    color: var(--main-color);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+.align-right { 
+  
+    text-align: right; 
+    }
+/* Style pour la liste à droite */
+.nav-links {
+    list-style: none; /* Supprime les puces */
+    display: flex;
+    gap: 15px; /* Espace entre les éléments */
+    /* Espace entre les éléments */
+    margin: 0;
+    padding: 0;
+  }
+
+/* Conteneur principal pour le champ de recherche */
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 2px solid #007BFF; /* Bordure bleue */
+    border-radius: 8px; /* Coins arrondis */
+    overflow: hidden; /* Empêche les débordements */
+    width: 400px; /* Largeur totale du conteneur */
+  }
+  
+  /* Style du champ de texte */
+  .search-container input {
+    flex: 1; /* Prend tout l'espace disponible */
+    padding: 10px; /* Espacement interne */
+    border: none; /* Pas de bordure */
+    outline: none; /* Supprime le contour au clic */
+  }
+  
+  /* Style du bouton */
+  .search-container button {
+    background-color: #007BFF; /* Bleu du bouton */
+    color: white; /* Texte en blanc */
+    border: none; /* Pas de bordure */
+    padding: 10px 20px; /* Espacement interne */
+    cursor: pointer; /* Curseur interactif */
+    font-size: 16px; /* Taille du texte */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Conteneur principal */
+.filters-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacement entre les boutons */
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  /* Titre "Filtres" */
+  .filter-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px; /* Petit espace après le mot "Filtres" */
+  }
+  
+  /* Style des boutons */
+  .filter-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Espace entre l'icône et le texte */
+    padding: 8px 15px; /* Espacement interne */
+    font-size: 14px;
+    font-weight: bold;
+    color: #000; /* Couleur du texte */
+    background-color: #fff; /* Fond blanc */
+    border: 1px solid #ccc; /* Bordure grise */
+    border-radius: 25px; /* Boutons arrondis */
+    cursor: pointer; /* Curseur interactif */
+    transition: all 0.3s ease; /* Animation au survol */
+  }
+  
+  /* Icônes des boutons */
+  .filter-btn i {
+    color: #007BFF; /* Couleur bleue des icônes */
+    font-size: 16px;
+  }
+  
+  /* Effet au survol des boutons */
+  .filter-btn:hover {
+    background-color: #f0f8ff; /* Fond bleu clair au survol */
+    border-color: #007BFF; /* Bordure bleue au survol */
+  }
+  
+  /* Bouton actif (Nos pépites) */
+  .filter-btn.active {
+    background-color: #E6F0FF; /* Fond bleu clair */
+    border-color: #007BFF; /* Bordure bleue */
+    color: #000; /* Texte noir */
+  }
+
+
+  .header { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+ 
+}
+
+  
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.section-title {
+    margin: 0;
+    font-size: 22px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.card img {
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 16px;
+}
+
+.euro {
+    font-weight: 700;
+}
+
+.neutral-star {
+    color: var(--main-bg-color)
+}
+
+
+/****** Hebergements And Populaires ***********/
+.hebergements-and-populaires {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hebergements-and-populaires section {
+    background-color: var(--main-bg-color);
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+/****** Hebergements ***********/
+.hebergements {
+    width: 65%;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10PX;
+}
+.card {
+    width: 30%;
+}
+.contenu-card {
+    display: flex;
+    flex-direction: column;
+}
+.contenu-card img{
+    border-radius: 10Px 10px 0 0; 
+}
+/****** Populaires ***********/
+.populaires {
+    width: 32%;
+}
+
+.populaires-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.populaires-cards .card {
+    display: flex;
+    margin-top: 33px;
+}
+
+.populaires-cards img {
+    width: 33%;
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.populaires-cards .card-content {
+    width: 67%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.populaires-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.populaires-cards .card-subtitle {
+    margin: 0;
+}
+
+.populaires-cards .card-rating {
+    margin-bottom: 5px;
+}
+
+
+
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) {
+    .hebergements-and-populaires {
+        flex-direction: column;
+    }
+
+    .hebergements {
+        width: 100%;
+    }
+
+    .populaires {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .populaires-cards a {
+        width: 30%;
+    }
+
+    .populaires-cards .card-title {
+        font-size: 14px;
+    }
+
+    .populaires-cards .card-subtitle {
+        font-size: 13px;
+    }
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+    /* ... */
+}
