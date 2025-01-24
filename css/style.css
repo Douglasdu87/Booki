@@ -63,8 +63,7 @@ p {
 
 .main-container {
     width: 1440px;
-    height: 1831px;
-    gap: 30px;
+    gap: 15px;
     box-sizing: border-box;
 }
 
@@ -72,7 +71,7 @@ p {
 .filters-container {
     display: flex;
     align-items: center;
-    gap: 20px; /* Espacement entre les boutons */
+    gap: 20px; 
     font-family: Arial, sans-serif;
     margin: 0px;
 }
@@ -89,7 +88,7 @@ p {
 
 /* Style du champ de texte */
 .search-container input {
-    flex: 1; /* Prend tout l'espace disponible */
+    flex: 1; 
     padding: 16px; /* Espacement interne */
     font-weight: bold;
     border: #F2F2F2 solid 1px;
@@ -103,7 +102,7 @@ p {
     border: none; 
     padding: 16px 16px; /* Espacement interne */
     cursor: pointer; /* Curseur interactif */
-    font-size: 16px; /* Taille du texte */
+    font-size: 16px; 
 }
 
 .icon{
@@ -149,7 +148,7 @@ p {
 .filter-title {
     font-size: 16px;
     font-weight: bold;
-    margin-right: 10px; /* Petit espace après le mot "Filtres" */
+    margin-right: 10px; /*  espace après le Filtres */
 }
 
 /* Style de boutons */
@@ -157,7 +156,7 @@ p {
     display: flex;
     align-items: center;
     gap: 5px; /* Espace entre l'icône et le texte */
-    padding: 8px 15px; /* Espacement interne */
+    padding: 8px 15px; 
     font-size: 14px;
     font-weight: bold;
     color: #000; /* Couleur du texte */
@@ -176,7 +175,7 @@ p {
 
 /* Effet au survol des boutons */
 .filter-btn:hover {
-    background-color: #f0f8ff; /* Fond bleu clair au survol */
+    background-color: #f0f8ff; 
     border-color: #0065FC; /* Bordure bleue au survol */
 }
 
@@ -543,9 +542,8 @@ footer ul, footer li {
         color: black;
         width: 49px;
         height: 49px;
-        right: 25px;
-       
-        position: relative;
+        right: 0; 
+        position: absolute;
         border-radius: 15px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Ombre légère pour un effet en relief */
     }
@@ -560,13 +558,14 @@ footer ul, footer li {
         align-items: center; /* Centre verticalement */
         margin: 5px 5px 10px 15px;
         border-radius: 10px;
-        width: 100%;
+        width: 90%;
+        position: relative;
     }
 
     .search-container input {
         width: 70%; /* Largeur du champ de recherche */
         max-width: 350px; /* Largeur maximale pour éviter qu'il ne devienne trop large */
-        padding:6px 0;
+        padding:6px 10px;
         font-size: 16px; /* Taille de la police */
         font-weight: bold;
         border: 1px solid #F2F2F2; /* Bordure légère */
@@ -671,13 +670,8 @@ footer ul, footer li {
         flex-direction: column;
         height: auto;
         gap: 10px;
-        padding-right: 10px;
-        padding: ;
-    
     }
-
     footer div {
-        width: auto;  
-        transform: translateX(20px);
+        padding: 0 20px;
     }
 }
