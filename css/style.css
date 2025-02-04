@@ -523,6 +523,8 @@ footer ul, footer li {
     .header img {
         width: 121px;
         margin: 20px;
+        height: auto;
+        margin: 40px;
     }
 
     .nav-links {
